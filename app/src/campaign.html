@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UnchainDrove</title>
+
+  <link href='app.css' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light">
+    <a href="/" class="nav-link btn">Fund a Campaign</a>
+    <a href="/" class="navbar-brand">UnchainDrove</a>
+    <a href="start_campaign.html" class="nav-link btn btn-success">Start a Campaign</a>
+ </nav>
+
+  <div class="container-fluid" style="margin-top: 30px;" id='campaign-details'>
+    <div class='row-fluid'>
+
+      <div class="col-sm-12">
+       <div style="display: none;" class="alert alert-success text-center" id="msg"></div>
+      </div>
+
+      <div class="col-sm-12">
+        <h1 class="text-center">Campaign Details</h1>
+      </div>
+
+      <div class="col-sm-12 text-center">
+        <div id="campaign-title"></div>
+        <div id="campaign-goal"></div>
+        <div id="campaign-raised"></div>
+      </div>
+
+      <div class="col-sm-12 text-center">
+
+       <form id="pledge-now" class="col-sm-12">
+        <input type="hidden" name="campaign-id" id="campaign-id" />
+        <p>Amount to pledge: <input type="number" name="pledge-amount" id="pledge-amount" style="margin-top:30px;"/></p>
+        <button type="submit" class="btn btn-success form-submit" style="margin-top:30px;">Pledge</button>
+       </form>
+
+       <form id='withdraw-funds' class='col-sm-12'>
+         <input type='hidden' name='campaign-id' id='campaign-id' />
+         <br>
+         <button type='submit' id='withdraw-funds' class='btn btn-success form-submit'>Withdraw Funds</button>
+       </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>

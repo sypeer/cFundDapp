@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UnchainDrove</title>
+
+  <link href='app.css' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light">
+    <a href="/" class="nav-link btn">Fund a Campaign</a>
+    <a href="/" class="navbar-brand">UnchainDrove</a>
+    <a href="start_campaign.html" class="nav-link btn btn-success">Start a Campaign</a>
+ </nav>
+
+  <div class="container-fluid" style="margin-top: 30px;" id='campaign-details'>
+    <div class='row-fluid'>
+
+      <div class="col-sm-12">
+       <div style="display: none;" class="alert alert-success text-center" id="msg"></div>
+      </div>
+
+      <div class="col-sm-12">
+        <h1 class="text-center" style="margin-bottom: 60px;">Enter Campaign Details</h1>
+      </div>
+
+      <div class="col-sm-12 text-center">
+
+       <form id="campaign-info" class="col-sm-12">
+        <p>Campaign Name: <input type="text" name="campaign-title" id="campaign-title" /></p>
+        <p>Campaign Funding Goal: <input type="text" name="campaign-goal" id="campaign-goal" /></p>
+        <p>Number Of Campaign Days: <input type="text" name="campaign-deadline" id="campaign-deadline" /></p>
+        <br>
+        <button type="submit" class="btn btn-success form-submit" style="margin-top:30px;">Submit</button>
+       </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
